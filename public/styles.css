@@ -1,0 +1,46 @@
+html {
+    /* background: url(images/ups-logo-main.png) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: 75%; */
+    background-color: #351C15;
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+body, text {
+
+    color: #FFB500;
+    font-family: 'Encode Sans Semi Condensed', sans-serif;
+
+}
+
+.main-heading{
+    padding-top: 3%;
+    text-align: center;
+    font-size: 35px;
+    background-color: #351C15;
+    
+}
+ 
+  .section-page-one {
+    height: 100px;
+    text-align: center;
+    font-size: 25px;
+    padding-top: 50px;
+    border-radius: 5px;
+  }
+
+.zipCodeBox{
+  border-radius: 5px;
+}
+ 
+#name:hover{
+  background-color: #351C15;
+}

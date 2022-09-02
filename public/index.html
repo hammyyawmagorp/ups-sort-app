@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UPS Sort App</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Encode+Sans+Semi+Condensed:wght@200&display=swap" rel="stylesheet">    
+    <link rel="stylesheet" href="styles.css">
+    <script type="text/javascript" src="https://npmcdn.com/parse/dist/parse.min.js"></script>
+`
+</head>
+<body>
+    <header>
+        <h1 class="main-heading" id="main-heading">United Parcel Service<br>Sorting App</h1>
+    </header><br>
+        <section class="section-page-one"><a name="section-page-one"></a>
+          <h2 class="first-page-heading"> HUB</h2><br>
+          <div class='page-one-wrapper'>
+            <div class="see-sites-txt">Select Hub from Dropdown Menu Below:</div>
+              <div class="menu">
+                  <select name="name" id="name">
+                      <option value="click-me" selected>Select Hub...</option>
+                      <option value="nassauny">Nassau NY</option>
+                      <option value="melvilleny">Melville NY</option>
+                  </select>
+              </div><br>     
+              <div class="content">
+                  <div id="click-me"></div>
+                  <div id="nassauny" class="data">
+                      <p><span>Nassau NY</span></p>
+                      <form class="hubInfoNasny">
+                        <input class="zipCodeBox" id="nasnyZip" name="nasnyZip" type="number">
+                        <input type="Submit">
+                        <p class="nasnyInsert"></p>
+                      </form>
+                  </div>
+                  <div id="melvilleny" class="data">
+                      <p><span>Melville NY</span></p>
+                      <p class="hub-info-melny">
+                        <input class="zipCodeBox" id="melny-zip" name="melny-zip" type="number">
+                        <input type="Submit">
+                      </p>
+                  </div>
+              </div>
+          </div>
+      </section>
+
+    <script src="index.js"></script>
+    <script src="content.js"></script>
+</body>
+</html>
