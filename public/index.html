@@ -10,7 +10,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Encode+Sans+Semi+Condensed:wght@200&display=swap" rel="stylesheet">    
     <link rel="stylesheet" href="styles.css">
     <script type="text/javascript" src="https://npmcdn.com/parse/dist/parse.min.js"></script>
-`
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
 </head>
 <body>
     <header>
@@ -18,37 +19,21 @@
     </header><br>
         <section class="section-page-one"><a name="section-page-one"></a>
           <h2 class="first-page-heading"> HUB</h2><br>
-          <div class='page-one-wrapper'>
-            <div class="see-sites-txt">Select Hub from Dropdown Menu Below:</div>
-              <div class="menu">
-                  <select name="name" id="name">
-                      <option value="click-me" selected>Select Hub...</option>
-                      <option value="nassauny">Nassau NY</option>
-                      <option value="melvilleny">Melville NY</option>
-                  </select>
-              </div><br>     
+          <div class='page-one-wrapper'><br>     
               <div class="content">
                   <div id="click-me"></div>
                   <div id="nassauny" class="data">
                       <p><span>Nassau NY</span></p>
-                      <form class="hubInfoNasny">
-                        <input class="zipCodeBox" id="nasnyZip" name="nasnyZip" type="number">
+                      <form class="hubInfoNasny" id="hubInfoNasny">
+                        <input class="zipCodeBox" name="nasnyZip" type="number">
                         <input type="Submit">
-                        <p class="nasnyInsert"></p>
-                      </form>
-                  </div>
-                  <div id="melvilleny" class="data">
-                      <p><span>Melville NY</span></p>
-                      <p class="hub-info-melny">
-                        <input class="zipCodeBox" id="melny-zip" name="melny-zip" type="number">
-                        <input type="Submit">
-                      </p>
+                      </form><br>
+                      <p class="pdDisplay"></p>
                   </div>
               </div>
           </div>
       </section>
 
     <script src="index.js"></script>
-    <script src="content.js"></script>
 </body>
 </html>
