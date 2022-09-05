@@ -6,19 +6,14 @@ hubInfoForm.addEventListener('submit', (e) => {
     
 });
 
-// console.log(hubInfoForm.elements.nasnyZip);
-
-
-
-const localUrl = "http://localhost:5432"
+const localUrl = "http://localhost:4400" 
 
 function getPD (zipcode){
-    axios.get (`${localUrl}/pd?zipcode=${zipcode}`)//?????????
+    axios.get (`${localUrl}/getPD?zipcode=${zipcode}`)
     .then((res) => {
-        document.querySelector('.pdDisplay').innerText = `The closest airport to your accomadations is: ${res.data[0].pd}`;
+        document.querySelector('.pdDisplay').innerText = `Package to: ${res.data[0].color}`;
         
     }).catch(err => document.querySelector('.pdDisplay').innerText = "Offline"
 
 )}
 
-console.log()
