@@ -7,8 +7,7 @@ hubInfoForm.addEventListener('submit', (e) => {
 });
 
 // const localUrl = "http://localhost:4400" 
-const localUrl = "https://ups-sort-app.vercel.app/" 
-
+const localUrl = "/" 
 
 function getPD (zipcode){
     axios.get (`${localUrl}/getPD?zipcode=${zipcode}`)
