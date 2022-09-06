@@ -6,8 +6,7 @@ hubInfoForm.addEventListener('submit', (e) => {
     
 });
 
-// const localUrl = "http://localhost:4400" 
-const localUrl = "/" 
+const localUrl = "http://localhost:4400" 
 
 function getPD (zipcode){
     axios.get (`${localUrl}/getPD?zipcode=${zipcode}`)
@@ -16,5 +15,5 @@ function getPD (zipcode){
         
     }).catch(err => document.querySelector('.pdDisplay').innerText = "Offline"
 
-)}
+)} 
 
